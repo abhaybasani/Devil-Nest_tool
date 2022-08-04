@@ -4,32 +4,34 @@ import bankAtm
 # import server,client,EncryptAnything
 import abhayMainProgram as amp
 banner="""
-                                            _                      _______                      _
-                                         _dMMMb._              .adOOOOOOOOOba.              _,dMMMb_
-                                        dP'  ~YMMb            dOOOOOOOOOOOOOOOb            aMMP~  `Yb
-                                        V      ~"Mb          dOOOOOOOOOOOOOOOOOb          dM"~      V
-                                                 `Mb.       dOOOOOOOOOOOOOOOOOOOb       ,dM'
-                                                  `YMb._   |OOOOOOOOOOOOOOOOOOOOO|   _,dMP'
-                                             __     `YMMM| OP'~"YOOOOOOOOOOOP"~`YO |MMMP'     __
-                                           ,dMMMb.     ~~' OO     `YOOOOOP'     OO `~~     ,dMMMb.
-                                        _,dP~  `YMba_      OOb      `OOO'      dOO      _aMMP'  ~Yb._
-                                                    `YMMMM\`OOOo     OOO     oOOO'/MMMMP'
-                                            ,aa.     `~YMMb `OOOb._,dOOOb._,dOOO'dMMP~'       ,aa.
-                                          ,dMYYMba._         `OOOOOOOOOOOOOOOOO'          _,adMYYMb.
-                                         ,MP'   `YMMba._      OOOOOOOOOOOOOOOOO       _,adMMP'   `YM.
-                                         MP'        ~YMMMba._ YOOOOPVVVVVYOOOOP  _,adMMMMP~       `YM
-                                         YMb           ~YMMMM\`OOOOI`````IOOOOO'/MMMMP~           dMP
-                                          `Mb.           `YMMMb`OOOI,,,,,IOOOO'dMMMP'           ,dM'
-                                            `'                  `OObNNNNNdOO'                   `'
-                                                                  `~OOOOO~'   AbhayBasani
+                _                      _______                      _
+             _dMMMb._              .adOOOOOOOOOba.              _,dMMMb_
+            dP'  ~YMMb            dOOOOOOOOOOOOOOOb            aMMP~  `Yb
+            V      ~"Mb          dOOOOOOOOOOOOOOOOOb          dM"~      V
+                     `Mb.       dOOOOOOOOOOOOOOOOOOOb       ,dM'
+                      `YMb._   |OOOOOOOOOOOOOOOOOOOOO|   _,dMP'
+                 __     `YMMM| OP'~"YOOOOOOOOOOOP"~`YO |MMMP'     __
+               ,dMMMb.     ~~' OO     `YOOOOOP'     OO `~~     ,dMMMb.
+            _,dP~  `YMba_      OOb      `OOO'      dOO      _aMMP'  ~Yb._
+                        `YMMMM\`OOOo     OOO     oOOO'/MMMMP'
+                ,aa.     `~YMMb `OOOb._,dOOOb._,dOOO'dMMP~'       ,aa.
+              ,dMYYMba._         `OOOOOOOOOOOOOOOOO'          _,adMYYMb.
+             ,MP'   `YMMba._      OOOOOOOOOOOOOOOOO       _,adMMP'   `YM.
+             MP'        ~YMMMba._ YOOOOPVVVVVYOOOOP  _,adMMMMP~       `YM
+             YMb           ~YMMMM\`OOOOI`````IOOOOO'/MMMMP~           dMP
+              `Mb.           `YMMMb`OOOI,,,,,IOOOO'dMMMP'           ,dM'
+                `'                  `OObNNNNNdOO'                   `'
+                                      `~OOOOO~'   AbhayBasani
 """
 print("[##########################################################################################################")
 print("[/]Hello everyone this is our projects made by: Abhay, Raju, Suraj.")
 print("[-]Tool created by Abhay, Raju, Suraj.")
-print()
 # ------------------------------------Manual Area----------------------------------------------------------
-from pyfiglet import figlet_format
-icon=figlet_format("Devil Nest",font='Digital') # Colossal,big,Banner3,Digital,
+icon=("""
++-+-+-+-+-+ +-+-+-+-+
+|D|e|v|i|l| |N|e|s|t|
++-+-+-+-+-+ +-+-+-+-+
+""")
 print(banner)
 print(icon)
 print("----------------------------------------------------------------------------------------------------------------------------------------")
