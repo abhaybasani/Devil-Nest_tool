@@ -55,6 +55,7 @@ class Phoneinfo:
         while True:
             try:
                 from phonenumbers import timezone, geocoder, carrier, parse
+                print("__________________________________________________")
                 print("Example: 917856421458")
                 number = input("[+]Enter your num with country code +__:")
                 phone = parse("+" + number)
