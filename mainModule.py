@@ -54,12 +54,15 @@ try:
     elif user==2:
         import space_game
     elif user==3:
-        print("working in progress!!")
-        import text_voice
+        amp.VT.X()
     elif user==4:
-        amp.T_V.TtoV()
+        amp.TV.T_V()
     elif user==5:
-        pass
+        amp.E_hash.E_md5()
+    elif user ==6:
+        amp.D_hash.D_md5()
+    elif user ==7:
+        amp.inetspeed.InetSpeed()
 except ValueError:
     print("Please type valid input.Or please get some HELP?")
 except TypeError:
