@@ -37,14 +37,14 @@ print(icon)
 print("----------------------------------------------------------------------------------------------------------------------------------------")
 print("[::]Select An Option You Wanna do.")
 print("""
-[1]Get Info using Ph.Number.                    [7]check internet speed.
-[2]Run Space Game(gui).                         [8]convert link into image.
-[3]Voice to Text converter.                     [9]Open bind connection server and client. 
-[4]Text to Voice converter.                     [10]Encrypt Any file using cryptography.
-[5]Encode your message in md5hash.              [11]
-[6]Decode md5hash code.
+        [1]Get Info using Ph.Number.                    [7]Check internet speed.
+        [2]Run Space Game(gui).                         [8]Encrypt Any file using cryptography.
+        [3]Convert link into QRcode image.              [9]Open bind connection server and client. 
+        [4]Text to Voice converter.                     [10]
+        [5]Encode your message in md5hash.              [11]Voice to Text converter.
+        [6]Decode md5hash code.
 
-[99]About                           [00]Exit
+        [99]About                           [00]Exit
 """)
 # --------------------------------------user input info area-----------------------------------------------------------------------
 user=int(input("[+]Select your Option:"))
@@ -56,7 +56,7 @@ try:
     elif user==2:
         import space_game
     elif user==3:
-        amp.VT.X()
+        amp.link_img.link_img()
     elif user==4:
         amp.TV.T_V()
     elif user==5:
@@ -66,7 +66,31 @@ try:
     elif user ==7:
         amp.inetspeed.InetSpeed()
     elif user == 8:
+        import EncryptAnything as enc
+        print("[+]What you want to do:\n[1]Encrypt the file.\n[2]Decrypt the file.")
+        inp=int(input("enter:>"))
+        if inp == 1:
+            enc.x.encrypt()
+        elif inp == 2:
+            enc.x.decprypt()
+        else:
+            print("Please enter b/w 1 or 2!!!!!")
+    elif user == 9:
+        import server, client, os
+        os.system('cmd \k "python server.py"')
+        os.system('cmd \k "python client.py"')
+    elif user == 10:
         pass
+    elif user == 11:
+        amp.VT.X()
+    elif user == 12:
+        pass
+
+    elif user == 99:
+        print("{#}This program was build by Abhay , Raju , Suraj if you are facing any kind of problem please contact us.We will happy to help you")
+        about={
+            "Email":"basaniabhay@gmail.com",
+        }
 except ValueError:
     print("Please type valid input.Or please get some HELP?")
 except TypeError:

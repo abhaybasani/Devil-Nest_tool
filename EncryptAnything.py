@@ -24,7 +24,7 @@ class X:
             # ---------------------------------------------------encrypt that file you read----------------------------------
             encrypted = fernet.encrypt(orignal_file)
             # save that encrypted file so it show on folder
-            enc_file=input("enter encripted file name with extention: ")
+            enc_file=input("[+]New name of encrypted file:> ")
             with open(f'{enc_file}', 'wb') as file:
                 file.write(encrypted)
                 print("---Your file was encrypted check your folder---")

@@ -159,6 +159,7 @@ class VoiceText:
     def X(self):
         import speech_recognition
         import pyttsx3
+        import pyaudio
 
         while True:
             recognizer=speech_recognition.Recognizer()
