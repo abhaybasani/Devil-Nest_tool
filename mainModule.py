@@ -37,12 +37,12 @@ print("-------------------------------------------------------------------------
 print("[::]Select An Option You Wanna do.")
 print("""
         [1]Get Info using Ph.Number.                    [7]Check internet speed.
-        [2]Run Space Game(gui).                         [8]Encrypt Any file using cryptography.
+        [2]Run Space Game(GUI).                         [8]Encrypt Any file using cryptography.
         [3]Convert link into QRcode image.              [9]Face Detection system. 
         [4]Text to Voice converter.                     [10]Information Gathering of any Website.
         [5]Encode your message in md5hash.              [11]Voice to Text converter.
-        [6]Notepad [Raju]                               [12]
-        [13]
+        [6]Turn any PDF to Voice.                       [12]
+        [13]Convert any PDF to Voice.
 
         [99]About                           [00]Exit
 """)
@@ -67,11 +67,13 @@ try:
     elif user ==7:
         amp.inetspeed.InetSpeed()
     elif user == 8:
-        import impProgram.EncryptAnything as enc
+        import impProgram.EncryptAnything
     elif user == 9:
-        pass
+        print("please wait it will start soon.......")
+        amp.FaceDect.faceDect()
     elif user == 10:
-        pass
+        print("please wait a moment.......")
+        amp.webScrap.webscrap()
     elif user == 11:
         amp.VT.X()
     elif user == 12:

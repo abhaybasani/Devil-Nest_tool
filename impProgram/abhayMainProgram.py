@@ -5,6 +5,7 @@ class Install_req:
         os.system('cmd')
 
 # print(1)
+# ------------------------------------------------Calculator------------------------------------
 class HM_Calc:
     def calc(self):
         try:
@@ -35,6 +36,7 @@ class HM_Calc:
         except KeyboardInterrupt:
             print("program is finish. Thanks you.")
 # print(2)
+# -------------------------------Discount calculation program--------------------------
 class Discount:
     def dis(self):
         try:
@@ -50,6 +52,7 @@ class Discount:
         except KeyboardInterrupt:
             print("program is finish. Thanks you.")
 # print(3)
+# --------------------------------------Phone information program---------------------------
 class Phoneinfo:
     def getInfo(self):
         while True:
@@ -92,6 +95,7 @@ class Phoneinfo:
             except None:
                 pass
 # print(4)
+# -----------------------------------------------Encode md5 hash-------------------------------------------
 class Encode_md5:
     def E_md5(self):
         while True:
@@ -104,9 +108,11 @@ class Encode_md5:
             except:
                 print("please get some help!!")
 # print(5)
+# -------------------------------------Decode md5 hash-----------------------------
 class Decode_md5():
     def Dcode(self):
         pass
+# -------------------------------------------------Internet Speed test Program--------------------------------
 class N_speed:
     def InetSpeed(self):
         # Internet speed test program
@@ -130,6 +136,7 @@ class N_speed:
         ping = test.results.ping
         print(f"Ping Speed: {download_result:.2f} ms")
 # print(8)
+# --------------------------------------------------Convert any link to a QRcode------------------
 class LinkImg:
     def link_img(self):
         import qrcode
@@ -162,7 +169,7 @@ class webInfo:
                     while True:
                         import requests
                         from bs4 import BeautifulSoup
-                        url=input("enter your url:>")
+                        url=input("enter your url with http/https:>")
                         print("""
                         1 ->website all anchors tag.
                         2 ->whole website html format.
@@ -194,8 +201,10 @@ class webInfo:
                             print(para)
                             print(title)
 
-                except:
+                except TypeError:
                     print("got some error")
+                except ValueError:
+                    print("please type complete url....")
 
 #-----------------------------------------------Face Dectection--------------------------------------------------------
 class FaceDect:
@@ -225,6 +234,43 @@ class FaceDect:
                 break
         camera.release()
         cv2.destroyAllWindows()
+
+# -----------------------------Turn any PDF to Voice---------------------------------
+class PDF_V:
+    def PDFtoVoice(self):
+        from win32com.client import Dispatch
+        def speak(str):
+            speak=Dispatch(("SAPI.SpVoice"))
+            speak.Speak(str)
+        #Importing Libraries
+        #Importing Google Text to Speech library
+        from gtts import gTTS
+        #Importing PDF reader PyPDF2
+        import PyPDF2
+
+        #Open file Path
+        user=input("Enter your exact location of your PDF file:> ")
+        pdf_File = open(user, 'rb')
+
+        #Create PDF Reader Object
+        pdf_Reader = PyPDF2.PdfFileReader(pdf_File)
+        count = pdf_Reader.numPages # counts number of pages in pdf
+        textList = []
+
+        #Extracting text data from each page of the pdf file
+        for i in range(count):
+           try:
+            page = pdf_Reader.getPage(i)
+            textList.append(page.extractText())
+           except:
+               pass
+
+        #Converting multiline text to single line text
+        textString = " ".join(textList)
+
+        print(textString)
+        speak(textString)
+
 #--------------------------------------------Voice to Text-----------------------------------------
 class VoiceText:
     def X(self):
@@ -262,4 +308,5 @@ inetspeed=N_speed()
 link_img=LinkImg()
 webScrap=webInfo()
 FaceDect=FaceDect()      #through cmd
+pdftovoice=PDF_V()
 print("finish program")
