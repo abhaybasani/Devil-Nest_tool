@@ -39,9 +39,10 @@ print("""
         [1]Get Info using Ph.Number.                    [7]Check internet speed.
         [2]Run Space Game(gui).                         [8]Encrypt Any file using cryptography.
         [3]Convert link into QRcode image.              [9]Face Detection system. 
-        [4]Text to Voice converter.                     [10]
+        [4]Text to Voice converter.                     [10]Information Gathering of any Website.
         [5]Encode your message in md5hash.              [11]Voice to Text converter.
-        [6]Notepad [Raju]
+        [6]Notepad [Raju]                               [12]
+        [13]
 
         [99]About                           [00]Exit
 """)
