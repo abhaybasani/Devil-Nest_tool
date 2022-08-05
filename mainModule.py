@@ -37,12 +37,12 @@ print("-------------------------------------------------------------------------
 print("[::]Select An Option You Wanna do.")
 print("""
         [1]Get Info using Ph.Number.                    [7]Check internet speed.
-        [2]Run Space Game(GUI).                         [8]Encrypt Any file using cryptography.
+        [2]Run Space Game(GUI).                         [8]Scan any Website Open Ports.
         [3]Convert link into QRcode image.              [9]Face Detection system. 
         [4]Text to Voice converter.                     [10]Information Gathering of any Website.
-        [5]Encode your message in md5hash.              [11]Voice to Text converter.
-        [6]Turn any PDF to Voice.                       [12]
-        [13]Convert any PDF to Voice.
+        [5]Encode your message in md5hash.              [11]Encrypt Any file using cryptography.
+        [6]Convert any PDF to Voice.                       [12]Voice to Text converter.
+        [13]
 
         [99]About                           [00]Exit
 """)
@@ -63,11 +63,11 @@ try:
     elif user==5:
         amp.E_hash.E_md5()
     elif user ==6:
-        pass
+        amp.pdftovoice.PDFtoVoice()
     elif user ==7:
         amp.inetspeed.InetSpeed()
     elif user == 8:
-        import impProgram.EncryptAnything
+        amp.P_S.portscan()
     elif user == 9:
         print("please wait it will start soon.......")
         amp.FaceDect.faceDect()
@@ -75,9 +75,9 @@ try:
         print("please wait a moment.......")
         amp.webScrap.webscrap()
     elif user == 11:
-        amp.VT.X()
+        import impProgram.EncryptAnything
     elif user == 12:
-        pass
+        amp.VT.X()
 
     elif user == 99:
         print("{#}This program was build by Abhay , Raju , Suraj if you are facing any kind of problem please contact us.We will happy to help you")
