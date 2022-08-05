@@ -65,6 +65,8 @@ try:
         amp.D_hash.D_md5()
     elif user ==7:
         amp.inetspeed.InetSpeed()
+    elif user == 8:
+        pass
 except ValueError:
     print("Please type valid input.Or please get some HELP?")
 except TypeError:
