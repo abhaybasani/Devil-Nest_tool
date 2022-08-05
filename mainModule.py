@@ -77,8 +77,8 @@ try:
             print("Please enter b/w 1 or 2!!!!!")
     elif user == 9:
         import server, client, os
-        os.system('cmd \k "python server.py"')
-        os.system('cmd \k "python client.py"')
+        os.system('cmd \k "py server.py"')
+        os.system('cmd \k "py client.py"')
     elif user == 10:
         pass
     elif user == 11:

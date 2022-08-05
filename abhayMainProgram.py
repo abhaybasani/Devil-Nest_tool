@@ -116,6 +116,7 @@ class N_speed:
         print("Loading server List......")
         test.get_servers()  # get list of servers
         print("Choosing best server........")
+        print("Please wait it take some Time..........")
         best = test.get_best_server()  # choose best server
         print(f"found Host: {best['host']} \nLocated in: {best['country']}")
         print("Downloading speed test.....")
@@ -146,8 +147,8 @@ class TextToVoice:
                 import os
                 # forFile=open("text.txt","r")
                 # forFileText=forFile.read().replace("\n"," ")
-                myText = input("enter your text: ")
-                language = 'en'
+                myText = input("[+]enter your text: ")
+                language = 'en-in'
                 output = gTTS(text=myText, lang=language, slow=False)
                 output.save("output.mp3")
                 os.system("start output.mp3")
@@ -190,4 +191,5 @@ D_hash=Decode_md5()
 E_hash=Encode_md5()
 inetspeed=N_speed()
 link_img=LinkImg()
+# link_img.link_img()
 print("finish program")
