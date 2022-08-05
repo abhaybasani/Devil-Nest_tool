@@ -29,3 +29,4 @@ def server():
         print("keyboard interrupt error caught.")
     except ValueError:
         print("please enter proper value!!!!! or get some help.")
+server()

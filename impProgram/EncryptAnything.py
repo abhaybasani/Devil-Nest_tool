@@ -2,20 +2,20 @@ class X:
     # fernet =it help to genrate secret key
     from cryptography.fernet import Fernet
     # --------------------------------------------------genrate the key for encryption and decryption-------------------------------
-    global key, fernet
+    global fernet, key
     key=Fernet.generate_key()
     # print("[*]your key is:> ",key)
     # encryption
     fernet=Fernet(key)
 
     #-----------------------------[writing the key] it create a file which contain file=key.key, wb=write-------------------
-    with open('key.key','wb') as filekey:
+    with open('key.key', 'wb') as filekey:
         filekey.write(key)
     #[reading the key]
-    with open ('key.key','rb') as filekey:
+    with open ('key.key', 'rb') as filekey:
         key=filekey.read()
     def encrypt(self):
-        print("[*]your key is:> ", key)
+        print("[*]your encryption key is:> ", key)
         try:
             # --------------------- {read the file} you want to encrypt [any file audio img video txt file] laser.wav=audio file---------------------------------
             select_file=input("[+]Enter file name which locatate on your folder: ")
@@ -34,22 +34,24 @@ class X:
             print("please get some help!!")
 
     def decprypt(self):
-        print("[*]your key is:> ", key)
         from cryptography.fernet import Fernet
         # ------------------------------------------decryption------------------------------------------------------------
         # decrypting the file
-        # fernet=Fernet(here you send the key you genrated to reciver so they can decrypt file)
+        # fernet=Fernet(here you send the key you genrated to reciver so they can decrypt file.
         fernet = Fernet(key)
         # read encrypted file
-        with open('encrypted laser.wav', 'rb') as file:
+        efile=input("[+]Enter file name for decrypt:>")
+        with open(efile, 'rb') as file:
             encrypted_file = file.read()
-
         # decypted file
         decrypted = fernet.decrypt(encrypted_file)
-
+        print(2)
         # create decrypt file
-        with open('decrypted laser.wav', 'wb') as file:
+        dname=input("[+]New decryption name:>")
+        with open(dname, 'wb') as file:
             file.write(decrypted)
-            print("---Your file was encrypted check your folder---")
+            print("---Your file was decrypted check your folder---")
 
 x=X()
+x.encrypt()
+x.decprypt()

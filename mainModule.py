@@ -1,8 +1,7 @@
 print("please wait..........")
-import bankAtm
+import impProgram.abhayMainProgram as amp
 # import space_game
 # import server,client,EncryptAnything
-import abhayMainProgram as amp
 banner="""
                 _                      _______                      _
              _dMMMb._              .adOOOOOOOOOba.              _,dMMMb_
@@ -39,10 +38,10 @@ print("[::]Select An Option You Wanna do.")
 print("""
         [1]Get Info using Ph.Number.                    [7]Check internet speed.
         [2]Run Space Game(gui).                         [8]Encrypt Any file using cryptography.
-        [3]Convert link into QRcode image.              [9]Open bind connection server and client. 
+        [3]Convert link into QRcode image.              [9]Face Detection system. 
         [4]Text to Voice converter.                     [10]
         [5]Encode your message in md5hash.              [11]Voice to Text converter.
-        [6]Decode md5hash code.
+        [6]Notepad [Raju]
 
         [99]About                           [00]Exit
 """)
@@ -55,6 +54,7 @@ try:
         amp.pInfo.getInfo()
     elif user==2:
         import space_game
+        space_game
     elif user==3:
         amp.link_img.link_img()
     elif user==4:
@@ -62,23 +62,13 @@ try:
     elif user==5:
         amp.E_hash.E_md5()
     elif user ==6:
-        amp.D_hash.D_md5()
+        pass
     elif user ==7:
         amp.inetspeed.InetSpeed()
     elif user == 8:
-        import EncryptAnything as enc
-        print("[+]What you want to do:\n[1]Encrypt the file.\n[2]Decrypt the file.")
-        inp=int(input("enter:>"))
-        if inp == 1:
-            enc.x.encrypt()
-        elif inp == 2:
-            enc.x.decprypt()
-        else:
-            print("Please enter b/w 1 or 2!!!!!")
+        import impProgram.EncryptAnything as enc
     elif user == 9:
-        import server, client, os
-        os.system('cmd \k "py server.py"')
-        os.system('cmd \k "py client.py"')
+        pass
     elif user == 10:
         pass
     elif user == 11:
