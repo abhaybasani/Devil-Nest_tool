@@ -9,7 +9,6 @@ cryptography
 pygame
 PyAudio
 Pillow
-termcolor
 PyPDF2
 pywin32
 requests
@@ -17,3 +16,4 @@ bs4
 opencv-python
 pathlib
 hashlib
+termcolor
