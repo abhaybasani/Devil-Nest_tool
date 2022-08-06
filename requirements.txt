@@ -15,5 +15,5 @@ requests
 bs4
 opencv-python
 pathlib
-hashlib
 termcolor
+hashlib
