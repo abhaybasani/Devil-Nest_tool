@@ -2,6 +2,8 @@ print("please wait..........")
 import impProgram.abhayMainProgram as amp
 # import space_game
 # import server,client,EncryptAnything
+import colorama
+from termcolor import colored
 banner="""
                 _                      _______                      _
              _dMMMb._              .adOOOOOOOOOba.              _,dMMMb_
@@ -31,21 +33,31 @@ icon=("""
 |D|e|v|i|l| |N|e|s|t|
 +-+-+-+-+-+ +-+-+-+-+
 """)
-print(banner)
-print(icon)
+try:
+    print(colored(banner, 'red'))
+    print(colored(icon,'green'))
+except:
+    print(banner)
+    print(icon)
 print("----------------------------------------------------------------------------------------------------------------------------------------")
-print("[::]Select An Option You Wanna do.")
-print("""
-        [1]Get Info using Ph.Number.                    [7]Check internet speed.
-        [2]Run Space Game(GUI).                         [8]Scan any Website Open Ports.
-        [3]Convert link into QRcode image.              [9]Face Detection system. 
-        [4]Text to Voice converter.                     [10]Information Gathering of any Website.
-        [5]Encode your message in md5hash.              [11]Encrypt Any file using cryptography.
-        [6]Convert any PDF to Voice.                       [12]Voice to Text converter.
+man="[::]Select An Option You Wanna do."
+manual="""
+        [1]Get Info using Ph.Number.                     [7]Check internet speed.
+        [2]Run Space Game(GUI).                          [8]Scan any Website Open Ports.
+        [3]Convert link into QRcode image.               [9]Face Detection system. 
+        [4]Text to Voice converter.                      [10]Information Gathering of any Website.
+        [5]Encode your message in md5hash.               [11]Encrypt Any file using cryptography.
+        [6]Convert any PDF to Voice.                     [12]Voice to Text converter.
         [13]
 
         [99]About                           [00]Exit
-""")
+"""
+try:
+    print(colored(man, 'magenta'))
+    print(colored(manual, 'red'))
+except:
+    print(man)
+    print(manual)
 # --------------------------------------user input info area-----------------------------------------------------------------------
 user=int(input("[+]Select your Option:"))
 try:
