@@ -2,7 +2,6 @@ print("please wait..........")
 import impProgram.abhayMainProgram as amp
 # import space_game
 # import server,client,EncryptAnything
-import colorama
 from termcolor import colored
 banner="""
                 _                      _______                      _
