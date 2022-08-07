@@ -3,22 +3,25 @@ class x:
 
         user = {
             'pin': 1234,
-            'balance': 1000
+            'balance': 10000
         }
         print(user)
 
         def widthdraw_cash():
             while True:
-                amount = int(input("Enter the amount of money you want to widthdraw: "))
-                if amount > user['balance']:
-                    print("You don't have sufficient balance to make this widthdrawal")
-                else:
-                    user['balance'] = user['balance'] - amount
-                    print(
-                        f"{amount} .rs successfully widthdrawn your remaining balance is {user['balance']} .rs")
-                    print('')
-                    return False
+                try:
 
+                    amount = int(input("Enter the amount of money you want to widthdraw: "))
+                    if amount > user['balance']:
+                        print("You don't have sufficient balance to make this widthdrawal")
+                    else:
+                        user['balance'] = user['balance'] - amount
+                        print(
+                            f"{amount} .rs successfully widthdrawn your remaining balance is {user['balance']} .rs")
+                        print('')
+                        return False
+                except:
+                    print("got some error....")
         def balance_enquiry():
             print(f"Total balance {user['balance']} Dollars")
             print('')
@@ -26,7 +29,7 @@ class x:
         is_quit = False
 
         print('')
-        print("Welcome to the Pythondex ATM")
+        print("Welcome to the ye wala ATM")
 
         pin = int(input('Please enter your four digit pin: '))
 

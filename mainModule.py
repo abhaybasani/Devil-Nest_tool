@@ -1,5 +1,6 @@
 print("please wait..........")
 import impProgram.abhayMainProgram as amp
+import impProgram.bankAtm as atm
 # import space_game
 # import server,client,EncryptAnything
 from termcolor import colored
@@ -42,12 +43,12 @@ print("-------------------------------------------------------------------------
 man="[::]Select An Option You Wanna do."
 manual="""
         [1]Get Info using Ph.Number.                     [7]Check internet speed.
-        [2]Run Space Game(GUI).                          [8]Scan any Website Open Ports.
+        [2]Run Space Game(GUI).                          [8]Get Open Ports of any websites.
         [3]Convert link into QRcode image.               [9]Face Detection system. 
         [4]Text to Voice converter.                      [10]Information Gathering of any Website.
         [5]Encode your message in md5hash.               [11]Encrypt Any file using cryptography.
-        [6]Convert any PDF to Voice.                     [12]Voice to Text converter.
-        [13]
+        [6]Convert any PDF to Voice.                     [12]Instagram User Details Info Gathering.
+        [13]Bank Atm Program.
 
         [99]About                           [00]Exit
 """
@@ -57,49 +58,55 @@ try:
 except:
     print(man)
     print(manual)
-# --------------------------------------user input info area-----------------------------------------------------------------------
-user=int(input("[+]Select your Option:"))
-try:
-    if user == 00:
-        quit()
-    elif user == 1:
-        amp.pInfo.getInfo()
-    elif user==2:
-        import space_game
-        space_game
-    elif user==3:
-        amp.link_img.link_img()
-    elif user==4:
-        amp.TV.T_V()
-    elif user==5:
-        amp.E_hash.E_md5()
-    elif user ==6:
-        amp.pdftovoice.PDFtoVoice()
-    elif user ==7:
-        amp.inetspeed.InetSpeed()
-    elif user == 8:
-        amp.P_S.portscan()
-    elif user == 9:
-        print("please wait it will start soon.......")
-        amp.FaceDect.faceDect()
-    elif user == 10:
-        print("please wait a moment.......")
-        amp.webScrap.webscrap()
-    elif user == 11:
-        import impProgram.EncryptAnything
-    elif user == 12:
-        amp.VT.X()
 
-    elif user == 99:
-        print("{#}This program was build by Abhay , Raju , Suraj if you are facing any kind of problem please contact us.We will happy to help you")
-        about={
-            "Email":"basaniabhay@gmail.com",
-        }
-except ValueError:
-    print("Please type valid input.Or please get some HELP?")
-except TypeError:
-    print("please type anything.")
-finally:
-    print("Thanks for using Us.")
-
+def option():
+    # --------------------------------------user input info area-----------------------------------------------------------------------
+    try:
+        user=int(input("[+]Select your Option:"))
+        if user == 00:
+            quit()
+        elif user == 1:
+            amp.pInfo.getInfo()
+        elif user==2:
+            import space_game
+            # space_game
+        elif user==3:
+            amp.link_img.link_img()
+        elif user==4:
+            amp.TV.T_V()
+        elif user==5:
+            amp.E_hash.E_md5()
+        elif user ==6:
+            amp.pdftovoice.PDFtoVoice()
+        elif user ==7:
+            amp.inetspeed.InetSpeed()
+        elif user == 8:
+            amp.P_S.portscan()
+        elif user == 9:
+            print("please wait it will start soon.......")
+            amp.FaceDect.faceDect()
+        elif user == 10:
+            print("please wait a moment.......")
+            amp.webScrap.webscrap()
+        elif user == 11:
+            import impProgram.EncryptAnything
+        elif user == 12:
+            amp.Instagram.Insta()
+        elif user == 13:
+            atm.obj.Atm()
+        elif user == 99:
+            about={
+                "Email":"basaniabhay@gmail.com",
+                "Phone":7830730633
+            }
+            print(f"[//]This program was build by Abhay , Raju , Suraj if you are facing any kind of problem please contact us.We will happy to help you or you contact us on: \n{about}")
+    except ValueError:
+        print("Please type only int value that you seen in options.Or please get some HELP?")
+    except TypeError:
+        print("please type anything.")
+    except:
+        print("got some error please contact us.")
+    finally:
+        print("Thanks for using Us.")
+option()
 

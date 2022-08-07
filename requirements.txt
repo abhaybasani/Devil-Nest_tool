@@ -14,6 +14,7 @@ pywin32
 requests
 bs4
 opencv-python
+tkinter
 pathlib
 hashlib
 termcolor
