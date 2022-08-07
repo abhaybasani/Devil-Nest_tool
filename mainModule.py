@@ -47,14 +47,14 @@ manual="""
         [3]Convert link into QRcode image.               [9]Face Detection system. 
         [4]Text to Voice converter.                      [10]Information Gathering of any Website.
         [5]Encode your message in md5hash.               [11]Encrypt Any file using cryptography.
-        [6]Convert any PDF to Voice.                     [12]Instagram User Details Info Gathering.
+        [6]Convert any PDF to Voice.                     [12]Instagram User Details Info Gathering(GUI).
         [13]Bank Atm Program.
 
         [99]About                           [00]Exit
 """
 try:
     print(colored(man, 'magenta'))
-    print(colored(manual, 'red'))
+    print(colored(manual, 'blue'))
 except:
     print(man)
     print(manual)
@@ -91,6 +91,7 @@ def option():
         elif user == 11:
             import impProgram.EncryptAnything
         elif user == 12:
+            print("please wait a moment.......")
             amp.Instagram.Insta()
         elif user == 13:
             atm.obj.Atm()

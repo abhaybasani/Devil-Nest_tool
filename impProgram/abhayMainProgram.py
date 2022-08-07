@@ -143,7 +143,7 @@ class LinkImg:
         link=input("[+]enter your link you want to convert:> ")
         img=qrcode.make(link)
         img.save("qrcode.jpg")
-        print("Your img was create and store in folder please check.")
+        print("\n[***]---Your img was create and store in folder please check.-------")
 # print(9)
 # ----------------------------------------text to voice------------------------------------
 class TextToVoice:
@@ -278,10 +278,11 @@ class PortScan:
     def portscan(self):
 
         startTime = time.time()
+        print("Example:->https://www.theict.in/")
         target = input('Enter the host website to be scanned: ')
         t_IP = gethostbyname(target)
         print('Starting scan on host: ', t_IP)
-        print("Please wait it take time to Scan Because it Scan all the ports......")
+        print("Please wait it take some time to Scan Because it Scan all the ports......")
 
         for i in range(50, 500):
             s = socket(AF_INET, SOCK_STREAM)

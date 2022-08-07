@@ -38,7 +38,7 @@ class x:
                 print("what do you want to do")
                 print(" Enter 1 to Widthdraw Cash \n Enter 2 for Balance Enquiry \n Enter 3 to Quit")
 
-                query = int(input("Enter the number corresponding to the activity you want to do: "))
+                query = int(input("Enter the number what you want to do: "))
 
                 if query == 1:
                     widthdraw_cash()
