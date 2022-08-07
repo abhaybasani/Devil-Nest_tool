@@ -92,6 +92,8 @@ class Phoneinfo:
                 print("##please enter int type value! next time")
             except KeyboardInterrupt:
                 print("program is finish. Thanks you.")
+            except None:
+                pass
 # print(4)
 # -----------------------------------------------Encode md5 hash-------------------------------------------
 class Encode_md5:
