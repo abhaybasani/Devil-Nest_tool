@@ -5,6 +5,8 @@
 NOTE:~ Please make sure you have install pip 
     for install pip please type on cmd:
 >py -m pip install --upgrade pip
+
+
 Step 1:-Please install required packages on requirements.txt
 just simply run on cmd or any IDE:->  pip install -r requirements.txt
 
