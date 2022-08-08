@@ -96,6 +96,9 @@ def option():
             amp.Instagram.Insta()
         elif user == 13:
             atm.obj.Atm()
+        elif user == 14:
+            print("[+]Please check notepad should be open on your pc.....")
+            import RajuProjects
         elif user == 99:
             about={
                 "Email":"basaniabhay@gmail.com",
