@@ -48,7 +48,8 @@ manual="""
         [4]Text to Voice converter.                      [10]Information Gathering of any Website.
         [5]Encode your message in md5hash.               [11]Encrypt Any file using cryptography.
         [6]Convert any PDF to Voice.                     [12]Instagram User Details Info Gathering(GUI).
-        [13]Bank Atm Program.
+        [13]Bank Atm Program.                            [14]Notepad GUI (Raju).
+        [15]
 
         [99]About                           [00]Exit
 """
