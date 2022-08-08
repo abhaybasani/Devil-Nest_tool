@@ -49,7 +49,7 @@ manual="""
         [5]Encode your message in md5hash.               [11]Encrypt Any file using cryptography.
         [6]Convert any PDF to Voice.                     [12]Instagram User Details Info Gathering(GUI).
         [13]Bank Atm Program.                            [14]Notepad GUI (Raju).
-        [15]
+        [15]Text to Handwriting converter.
 
         [99]About                           [00]Exit
 """
@@ -99,6 +99,8 @@ def option():
         elif user == 14:
             print("[+]Please check notepad should be open on your pc.....")
             import RajuProjects
+        elif user == 15:
+            amp.TextToHand.text_handw()
         elif user == 99:
             about={
                 "Email":"basaniabhay@gmail.com",
