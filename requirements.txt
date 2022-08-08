@@ -15,6 +15,7 @@ requests
 bs4
 opencv-python
 tk
+pywhatkit
 pathlib
 hashlib
 termcolor
